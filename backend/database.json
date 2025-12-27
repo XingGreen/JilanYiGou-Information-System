@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "username": "GreenXing",
+      "email": "483165474@qq.com",
+      "password": "$2b$12$o7Ine9lUh0CqSFHBuraX2eqDQfVfOK9JFoEU.1fvf78o4vO8hMUXW",
+      "id": 1,
+      "createdAt": "2025-12-27T03:32:39.874Z",
+      "updatedAt": "2025-12-27T03:32:39.874Z"
+    }
+  ],
+  "ideas": [],
+  "tags": [],
+  "ideaTags": []
+}
