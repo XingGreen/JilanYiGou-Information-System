@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import type { Idea, IdeaFilters } from '../types';
 import { ideaService } from '../services/api';
 import { useAuth } from '../hooks/useAuth';
-import Navbar from '../components/Navbar';
 
 const IdeaListPage: React.FC = () => {
   const [ideas, setIdeas] = useState<Idea[]>([]);
@@ -73,8 +72,7 @@ const IdeaListPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Navbar />
+    <div className="bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-800">我的思想</h2>

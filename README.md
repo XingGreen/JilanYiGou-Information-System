@@ -84,11 +84,8 @@
 
 3. **配置后端环境**
    ```bash
-   # 复制并编辑环境变量文件
-   cp .env.example .env
-   ```
-   在.env文件中配置以下变量：
-   ```
+   # 编辑环境变量文件
+   # backend/.env 文件已存在，包含以下配置：
    PORT=3001
    JWT_SECRET=your_jwt_secret_key_here
    DB_PATH=./database.sqlite

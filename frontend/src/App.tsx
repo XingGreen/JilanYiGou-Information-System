@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import IdeaListPage from './pages/IdeaListPage';
+import IdeaDetailPage from './pages/IdeaDetailPage';
 import IdeaFormPage from './pages/IdeaFormPage';
 
 // 受保护的路由组件
@@ -27,6 +28,8 @@ function App() {
               
               {/* 受保护的路由 */}
               <Route path="/" element={<ProtectedRoute><IdeaListPage /></ProtectedRoute>} />
+              <Route path="/ideas" element={<ProtectedRoute><IdeaListPage /></ProtectedRoute>} />
+              <Route path="/ideas/:id" element={<ProtectedRoute><IdeaDetailPage /></ProtectedRoute>} />
               <Route path="/ideas/new" element={<ProtectedRoute><IdeaFormPage /></ProtectedRoute>} />
               <Route path="/ideas/edit/:id" element={<ProtectedRoute><IdeaFormPage /></ProtectedRoute>} />
               

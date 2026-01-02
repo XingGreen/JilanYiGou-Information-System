@@ -3,7 +3,6 @@ import { useForm } from 'react-hook-form';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ideaService } from '../services/api';
 import { useAuth } from '../hooks/useAuth';
-import Navbar from '../components/Navbar';
 
 interface IdeaFormData {
   title: string;
@@ -116,8 +115,7 @@ const IdeaFormPage: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Navbar />
+    <div className="bg-gray-100">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">
           {id ? '编辑思想' : '创建新思想'}
